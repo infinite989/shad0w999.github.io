@@ -1,0 +1,18 @@
+gg.toast('Script made by Granny', true)
+menu=gg.choice({'Inf Gold', 'Inf Gems'})
+if menu==1 then
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchAddress('??F??', 0xBA0, gg.TYPE_DWORD, gg.SIGN_NOT_EQUAL, 0x0CE84CAC, 0x0CE84C0C)
+gg.getResults(1)
+gg.editAll('1999999999', gg.TYPE_DWORD)
+gg.toast('Inf Gold executed', true)
+end
+if menu==2 then
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchAddress('??F??', 0xBA0, gg.TYPE_DWORD, gg.SIGN_NOT_EQUAL, 0x0CE84CAC, 0x0CE84CAC)
+gg.getResults(1)
+gg.editAll('1999999999', gg.TYPE_DWORD)
+gg.toast('Inf Gems executed ', true)
+end
