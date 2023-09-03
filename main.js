@@ -1,4 +1,5 @@
 window.addEventListener("load", linkshit);
+window.addEventListener("load", deviceChecker);
 function linkshit()
 {
    const path = window.location.href.split("/")
@@ -136,4 +137,48 @@ function scripthunrepoclick()
 function cookieclickerclick()
 {
   window.open('https://grannythedev.github.io/CookieClicker')
+}
+
+function tabFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function isMobile()
+{
+const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+return regex.test(navigator.userAgent);
+}
+function deviceChecker()
+{
+if (isMobile())
+{
+if (document.getElementById("pctopnav") != null)
+{
+let pctopnav = document.getElementById("pctopnav");
+pctopnav.style.display = "none";
+}
+if (document.getElementById("topnav") != null)
+{
+let mobiletopnav = document.getElementById("topnav");
+mobiletopnav.style.display = "block";
+}
+else if (!isMobile())
+{
+if (document.getElementById("pctopnav") != null)
+{
+let pctopnav = document.getElementById("pctopnav");
+pctopnav.style.display = "block";
+}
+if (document.getElementById("topnav") != null)
+{
+let mobiletopnav = document.getElementById("topnav");
+mobiletopnav.style.display = "none";
+}
+}
+}
 }
