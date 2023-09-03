@@ -167,6 +167,7 @@ if (document.getElementById("topnav") != null)
 let mobiletopnav = document.getElementById("topnav");
 mobiletopnav.style.display = "block";
 }
+}
 else if (!isMobile())
 {
 if (document.getElementById("pctopnav") != null)
@@ -178,7 +179,6 @@ if (document.getElementById("topnav") != null)
 {
 let mobiletopnav = document.getElementById("topnav");
 mobiletopnav.style.display = "none";
-}
 }
 }
 }
