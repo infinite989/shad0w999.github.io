@@ -48,29 +48,14 @@ body {
   height: 50px;
   color: white;
   border-radius: 10px;
-}
-
-.mobile-containerinvis {
-  max-width: 100%;
-  margin: auto;
-  background-color: #353535;
-  height: 50px;
-  color: white;
-  border-radius: 10px;
   display: none;
-}
-
-.pctopnavinvis {
-overflow: hidden;
-background-color: #353535;
-border-radius: 10px;
-display: none;
 }
 
 .pctopnav {
 overflow: hidden;
 background-color: #353535;
 border-radius: 10px;
+display: none;
 }
 
 .pctopnav a {
