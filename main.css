@@ -40,3 +40,75 @@ body {
   .vis {
     display: initial;
   }
+
+.mobile-container {
+  max-width: 100%;
+  margin: auto;
+  background-color: #353535;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+}
+
+.mobile-containerinvis {
+  max-width: 100%;
+  margin: auto;
+  background-color: #353535;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+.pctopnavinvis {
+overflow: hidden;
+background-color: #353535;
+border-radius: 10px;
+display: none;
+}
+
+.pctopnav {
+overflow: hidden;
+background-color: #353535;
+border-radius: 10px;
+}
+
+.pctopnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #353535;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #353535;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #353535;
+  color: white;
+}
