@@ -27,7 +27,7 @@ body {
     text-align: center;
     border: none;
     height: 30px;
-    width: 15%;
+    width: 150px;
   }
   .Open:hover {
     color: blue;
@@ -55,7 +55,6 @@ body {
 overflow: hidden;
 background-color: #353535;
 border-radius: 10px;
-display: none;
 }
 
 .pctopnav a {
@@ -65,6 +64,10 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
+}
+
+.pctopnav a:hover {
+  color: blue;
 }
 
 .topnav {
@@ -96,4 +99,15 @@ font-size: 17px;
 .active {
   background-color: #353535;
   color: white;
+}
+
+.btn {
+border: none;
+color: white;
+background-color: #353535;
+border-radius: 50px;
+}
+
+.btn:hover {
+  color: blue;
 }
