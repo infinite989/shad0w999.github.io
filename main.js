@@ -1,5 +1,5 @@
 window.addEventListener("load", linkshit);
-window.addEventListener("load", deviceChecker);
+window.addEventListener("load", loadDeviceSettings);
 function linkshit()
 {
    const path = window.location.href.split("/")
@@ -148,37 +148,41 @@ function tabFunction() {
   }
 }
 
-function isMobile()
+function deviceMode(device)
 {
-const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-return regex.test(navigator.userAgent);
+if (device == "mobile")
+{
+  let mobilenav = document.getElementById("topnav");
+  mobilenav.style.display = "block";
+  let pcnav = document.getElementById("pctopnav");
+  pcnav.style.display = "none";
+  localStorage.setItem("device", "mobile")
 }
-function deviceChecker()
+else if (device == "pc")
 {
-if (isMobile())
-{
-if (document.getElementById("pctopnav") != null)
-{
-let pctopnav = document.getElementById("pctopnav");
-pctopnav.style.display = "none";
-}
-if (document.getElementById("topnav") != null)
-{
-let mobiletopnav = document.getElementById("topnav");
-mobiletopnav.style.display = "block";
-}
-}
-else if (!isMobile())
-{
-if (document.getElementById("pctopnav") != null)
-{
-let pctopnav = document.getElementById("pctopnav");
-pctopnav.style.display = "block";
-}
-if (document.getElementById("topnav") != null)
-{
-let mobiletopnav = document.getElementById("topnav");
-mobiletopnav.style.display = "none";
+  let mobilenav = document.getElementById("topnav");
+  mobilenav.style.display = "none";
+  let pcnav = document.getElementById("pctopnav");
+  pcnav.style.display = "block";
+  localStorage.setItem("device", "pc")
 }
 }
+
+function loadDeviceSettings()
+{
+  let device = localStorage.getItem("device");
+  if (device == "mobile")
+  {
+    let mobilenav = document.getElementById("topnav");
+    mobilenav.style.display = "block";
+    let pcnav = document.getElementById("pctopnav");
+    pcnav.style.display = "none";
+  }
+  else if (device == "pc")
+  {
+    let mobilenav = document.getElementById("topnav");
+    mobilenav.style.display = "none";
+    let pcnav = document.getElementById("pctopnav");
+    pcnav.style.display = "block";
+  }
 }
