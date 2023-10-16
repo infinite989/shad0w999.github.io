@@ -20,10 +20,6 @@ function linkshit()
    {
      window.location = "https://grannythedev.github.io/SaveFiles.html";
    }
-   else if (Text[Text.length - 1] == "bots")
-   {
-    window.location = "https://grannythedev.github.io/bots.html";
-   }
    if (window.location.pathname == "/index.html")
    {
      let tab = document.getElementById("home");
@@ -56,46 +52,18 @@ function linkshit()
        tab.style.color = "#0000FF";
      }
    }
-   else if (window.location.pathname == "/bots.html")
-   {
-     let tab = document.getElementById("bots");
-     if (tab != null)
-     {
-       tab.style.color = "#0000FF";
-     }
-   }
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-let skrillbotbtn = document.getElementById("skrillbot");
-if (skrillbotbtn != null)
-{
-  skrillbotbtn.addEventListener("click", skrillbot);
-}
-let hotjennybtn = document.getElementById("hotjennybot");
-if (hotjennybtn != null)
-{
-  hotjennybtn.addEventListener("click", hotjenny);
-}
 let grannybtn = document.getElementById("granny");
 if (grannybtn != null)
 {
   grannybtn.addEventListener("click", grannyclick);
 }
-let serverbtn = document.getElementById("serverfile");
-if (serverbtn != null)
+let scripthubrepobtn = document.getElementById("scripthubrepo");
+if (scripthubrepobtn != null)
 {
-  serverbtn.addEventListener("click", serverclick);
-}
-let gamebtn = document.getElementById("gamefile");
-if (gamebtn != null)
-{
-  gamebtn.addEventListener("click", gameclick);
-}
-let scripthunrepobtn = document.getElementById("scripthubrepo");
-if (scripthunrepobtn != null)
-{
-  scripthunrepobtn.addEventListener("click", scripthunrepoclick);
+  scripthubrepobtn.addEventListener("click", scripthubrepoclick);
 }
 let cookieclickerbtn = document.getElementById("cookieclicker");
 if (cookieclickerbtn != null)
@@ -104,34 +72,14 @@ if (cookieclickerbtn != null)
 }
 });
 
-function skrillbot()
-{
-window.open('https://discord.com/api/oauth2/authorize?client_id=1057012274117746768&permissions=8&scope=bot');  
-}
-
-function hotjenny()
-{
-window.open('https://discord.com/api/oauth2/authorize?client_id=998895254734393344&permissions=8&scope=bot');  
-}
-
 function grannyclick()
 {
   window.open('https://drive.google.com/file/d/1-GkHe0bTHhD3apS94tCeM2NXg1xOlAyJ/view?usp=drivesdk')
 }
 
-function serverclick()
+function scripthubrepoclick()
 {
-  window.open('https://drive.google.com/file/d/1-6IeG_lKDlIpLYhSjHnJChnQm4Qa8Km2/view?usp=drivesdk')
-}
-
-function gameclick()
-{
-  window.open('https://drive.google.com/file/d/1-5UMRAxQC-RIyS0-0pu0DQjKYW1KZhee/view?usp=drivesdk')
-}
-
-function scripthunrepoclick()
-{
-  window.open('https://github.com/GrannyTheDev/skrilly')
+  window.open('https://skrill.glitch.me')
 }
 
 function cookieclickerclick()
